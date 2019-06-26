@@ -1,0 +1,66 @@
+<form (ngSubmit)="sendRequest()" class="form">
+  <div class="row">
+    <div style="width: 33%">
+      <mat-form-field class="example-full-width" style="width: 133px !important">
+        <input matInput type="number" placeholder="Birhtday" [(ngModel)]='data.date_birth_day' value="3" name="date_birth_day">
+      </mat-form-field>
+    </div>
+    <div style="width: 33%">
+
+      <mat-form-field class="example-full-width" style="width: 133px !important">
+        <input matInput type="number" placeholder="Birthmonth" [(ngModel)]='data.date_birth_month' name="date_birth_month">
+      </mat-form-field>
+    </div>
+    <div style="width: 33%">
+      <mat-form-field class="example-full-width" style="width: 133px !important">
+        <input matInput type="number" placeholder="Birthyear" [(ngModel)]='data.date_birth_year' name="date_birth_year">
+      </mat-form-field>
+      </div>
+  </div>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Manifest Sphere" [(ngModel)]='data.manifest_sphere' name="manifest_sphere">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Manifest Cylinder" [(ngModel)]='data.manifest_cylinder' name="manifest_cylinder">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Manifest Axis" [(ngModel)]='data.manifest_axis' name="manifest_axis">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Method" value="LASIK" [(ngModel)]='data.method' name="method">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Laser Excimer" value="WaveLight EX500" [(ngModel)]='data.laser_excimer' name="laser_excimer">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Laser Mode" value="WFO" [(ngModel)]='data.laser_mode' name="laser_mode">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Intervention</mat-label>
+      <select matNativeControl required [(ngModel)]='data.intervention' name="intervention">
+        <option value="first">first</option>
+        <option value="second">second</option>
+      </select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Optical Zone" [(ngModel)]='data.laser_optical_zone' name="laser_optical_zone">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Target Sphere" [(ngModel)]='data.target_sphere' name="target_sphere">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="number" placeholder="Target Cylinder" [(ngModel)]='data.target_cylinder' name="target_cylinder">
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button>Submit Request</button>
+  </form>
